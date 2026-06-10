@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e8e8e8 0%, #c9c9c9 100%);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  padding: 24px;
+}
+
+.hub {
+  width: min(640px, 100%);
+}
+
+.hub-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.hub-header h1 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: #1e1e2f;
+  margin-bottom: 8px;
+}
+
+.hub-header p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.project-links {
+ display: flex;
+ gap: 10px;
+ justify-content: center;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 28px 20px;
+  background: #1e1e2f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 250px;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+}
+
+.project-card:focus-visible {
+  outline: 3px solid #6c63ff;
+  outline-offset: 3px;
+}
+
+.project-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.project-desc {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.4;
+}
